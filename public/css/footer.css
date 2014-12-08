@@ -1,20 +1,19 @@
 
 @font-face {
     font-family: bgr;
-    src: url(fonts/glyphicons-halflings-regular.woff);
+    src: url(../fonts/glyphicons-halflings-regular.woff);
 }
 
 body{
   font-family: bgr;
-  padding-bottom: 70px;
 }
 
 .headTitle{
-  font-size: 20pt;
+  font-size: 25px;
 }
 
 #currentCity{
-  font-size: 16pt;
+  font-size: 20px;
   color:  rgb(30,125,205);
   border-bottom: 1px dotted;
   margin-right: 50px;
@@ -26,26 +25,57 @@ body{
   border-bottom: 1px solid #ccc;
 }
 
+
+
+html,  body {
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+#wrapper {
+  min-height:100%;
+  position:relative;
+}
+
+#header {
+  padding:10px;
+}
+
+#content {
+  padding:10px;
+  padding-bottom:150px; /* Height of the footer element */
+}
+
+#footer {
+  border-top: 1px solid #ccc;
+  width:100%;
+  height:150px;
+  position:absolute;
+  bottom:0;
+  left:0;
+}
+
 .footer-ul{
    list-style: none; 
  }
 
 .footerTitle{
-  font-size: 17pt;
+  font-size: 21px;
 }
 
 .footerBody{
-  font-size: 15pt;
+  font-size: 16px;
   color: rgb(70%, 70%, 70%);
 }
 
 .copyrightInfo{
-  font-size: 10pt;
+  font-size: 14px;
   color: rgb(70%, 70%, 70%);
   text-align: center;
 }
 
 .footer-ul a{
-  font-size: 15pt;
+  font-size: 18px;
   color:  rgb(77,212,252);
 }

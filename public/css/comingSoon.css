@@ -1,0 +1,11 @@
+ .comingSoonImg img{
+   width: 130px;
+   margin:  50px;
+   margin-top:8%;
+ }
+
+.comingSoon{
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+}
