@@ -57,7 +57,8 @@ html,  body {
 }
 
 .footer-ul{
-   list-style: none; 
+   list-style: outside none; 
+  padding: 0px;
  }
 
 .footerTitle{

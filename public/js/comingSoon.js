@@ -1,10 +1,13 @@
-console.log('hi');
 
 var comingSoon = angular.module('comingSoon', []);
 
-comingSoon.controller('HelloWorldCtrl', function($scope){
-  $scope.helloMessage = "Hello world";
-
+comingSoon.controller('ComingSoonCtrl', function($scope, $http){
+	$scope.city = "Chennai";
+	$http.jsonp("http://ipinfo.io?callback=JSON_CALLBACK").success(function(data){
+        console.log(JSON.stringify(data));
+		$scope.city = data.city;
+    });
+	
 });
 
 
