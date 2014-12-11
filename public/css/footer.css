@@ -1,11 +1,23 @@
 
 @font-face {
-    font-family: bgr;
-    src: url(../fonts/glyphicons-halflings-regular.woff);
+    font-family: bBold;
+    src: url(../fonts/Brandon_bld.otf);
+}
+
+
+@font-face {
+    font-family: bMed;
+    src: url(../fonts/Brandon_med.otf);
+}
+
+
+@font-face {
+    font-family: bReg;
+    src: url(../fonts/Brandon_reg.otf);
 }
 
 body{
-  font-family: bgr;
+  font-family: bReg;
 }
 
 .headTitle{
@@ -13,9 +25,10 @@ body{
 }
 
 #currentCity{
-  font-size: 20px;
+  font-size: 16pt;
   color:  rgb(30,125,205);
   border-bottom: 1px dotted;
+  font-family: bBold;
   margin-right: 50px;
   margin-top: 5px;
   
@@ -62,21 +75,21 @@ html,  body {
  }
 
 .footerTitle{
-  font-size: 21px;
+  font-size: 17pt;
 }
 
 .footerBody{
-  font-size: 16px;
+  font-size: 15pt;
   color: rgb(70%, 70%, 70%);
 }
 
 .copyrightInfo{
-  font-size: 14px;
+  font-size: 10pt;
   color: rgb(70%, 70%, 70%);
   text-align: center;
 }
 
 .footer-ul a{
-  font-size: 18px;
+  font-size: 15pt;
   color:  rgb(77,212,252);
 }
