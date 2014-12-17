@@ -1,4 +1,23 @@
- .comingSoonImg img{
+.modal {
+  text-align: center;
+}
+
+.modal:before {
+  display: inline-block;
+  vertical-align: middle;
+  content: " ";
+  height: 100%;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+
+
+.comingSoonImg img{
    width: 111px;
    margin:  50px;
    margin-top:8%;
@@ -8,4 +27,41 @@
   font-size: 17pt;
   font-family: bBold;
   text-align: center;
+}
+
+.comingSoon span{
+	margin-right:35px;
+}
+
+.alertDownTitle{
+  font-family: bMed;
+  text-align: center;
+  color: rgb(30,125,205);
+  font-size: 31pt;
+  padding:  15px 0px;
+}
+
+
+
+.alertDownText{
+  font-family: bMed;
+  text-align: center;
+  color: rgb(70%, 70%, 70%);
+  font-size: 17pt;
+  padding-bottom: 15px;
+}
+
+.modal-header{
+ border-bottom-color: transparent; 
+}
+
+  .modal-dialog{
+	width:700px;
+  }
+  
+.modal-broken .close span{
+  font-size:40pt;
+  opacity: 100;
+  color: #000;
+  
 }
