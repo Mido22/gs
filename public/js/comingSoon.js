@@ -21,10 +21,8 @@ $(document).ready(function(){
 	$('.tmpBtn').hide();
 	setTimeout(function(){
 		$( "a" ).click(function() {
-			$('.tmpBtn').click();		
+			$('#myModal').modal('show');		
 		});
-		
-
 	},1000);
 });
 

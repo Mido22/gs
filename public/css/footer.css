@@ -25,10 +25,10 @@ body{
 }
 
 #currentCity{
-  font-size: 16pt;
-  color:  rgb(30,125,205);
+  font-size: 16px;
+  color:  rgb(24,112,160);
   border-bottom: 1px dotted;
-  font-family: bBold;
+  text-transform: uppercase;
   margin-right: 50px;
   margin-top: 5px;
   
@@ -72,21 +72,21 @@ body{
 }
  
 .footerTitle{
-  font-size: 17pt;
+  font-size: 15px;
 }
 
 .footerBody{
-  font-size: 15pt;
+  font-size: 15px;
   color: rgb(70%, 70%, 70%);
 }
 
 .footer-ul a{
-  font-size: 15pt;
+  font-size: 15px;
   color:  rgb(77,212,252);
 }
 
 .copyrightInfo{
-  font-size: 10pt;
+  font-size: 10px;
   padding: 20px 0px;
   color: rgb(70%, 70%, 70%);
   text-align: center;
