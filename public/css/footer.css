@@ -20,6 +20,12 @@ body{
   font-family: bReg;
 }
 
+.midoCentre{
+    display: flex;
+    align-items: center;	
+	justify-content: center;
+}
+
 .headTitle{
   font-size: 25px;
 }
