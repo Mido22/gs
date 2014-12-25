@@ -23,19 +23,48 @@ homepage.controller('homePageCtrl', function($scope){
 	$scope.changeDist = function(d){
 		$scope.searchDistance  = d;
 	};
+	$scope.search = function(){
+		getLocation();
+	};
 });
 
 
 $(document).ready(function(){
-
-		$(".fade").click(function(){
+	setTimeout(function(){
+		$("#myModal").click(function(evt){
+			if(evt.target.className.indexOf('close')>-1)	return;
 			$(".fade .close").click();
 		});
-	$('.tmpBtn').hide();
-	setTimeout(function(){
-		$( "a" ).click(function() {
+
+		$( ".footer a" ).click(function() {
 			$('#myModal').modal('show');		
 		});
 	},1000);
 });
 
+
+function showLocation(position) {
+  var latitude = position.coords.latitude;
+  var longitude = position.coords.longitude;
+  alert("Latitude : " + latitude + " Longitude: " + longitude);
+}
+
+function errorHandler(err) {
+  if(err.code == 1) {
+    alert("Error: Access is denied!");
+  }else if( err.code == 2) {
+    alert("Error: Position is unavailable!");
+  }
+}
+function getLocation(){
+
+   if(navigator.geolocation){
+      // timeout at 60000 milliseconds (60 seconds)
+      var options = {timeout:60000};
+      navigator.geolocation.getCurrentPosition(showLocation, 
+                                               errorHandler,
+                                               options);
+   }else{
+      alert("Sorry, browser does not support geolocation!");
+   }
+}

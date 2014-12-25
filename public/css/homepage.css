@@ -30,38 +30,38 @@
 	min-width:100px;
 }
 
-.homePageTop{
-}
+/*** homepage body start  ***/
 
-.homepage{
+
+.homepageBody{
 margin-top: 15%;
 }
 
-.searchIcon img{	
+.homepageBody .searchIcon img{	
 	position: relative;
 	top : -30px;
 }
 
-.homepage .searchArea input[type='text']{
+.homepageBody .searchArea input[type='text']{
 	line-height: 60px;	
 	height : 60px;
 	width:100%;
 	font-size: 1.67em;	
 }
-.homepage .searchBtn{	
+.homepageBody .searchBtn{	
 	height:60px;
 	background-color:#0670A0;
 	
 }
 
-.homepage .searchBtn a{
+.homepageBody .searchBtn a{
 	color:#fff;
 	font-size: 1.67em;
 	text-decoration: none;
 	
 }
 
-.homepage  .radioOptions{
+.homepageBody  .radioOptions{
 	margin-left:auto;
 	margin-right:auto;
 	clear:both;
@@ -72,46 +72,49 @@ margin-top: 15%;
 }
 
 
-.homepage .searchArea .radioOptions input {
+.homepageBody .searchArea .radioOptions input {
 }
 
-.homepage  .radioOptions input +label{
+.homepageBody  .radioOptions input +label{
 	margin: 0px 25px;
 	font-size: 1.60em;	
 	vertical-align:middle;
 }
-.homepage  .radioOptions input {
+.homepageBody  .radioOptions input {
 	vertical-align:middle;
 }
 
 
-.homepage .searchDist{
+.homepageBody .searchDist{
 	font-size:1.60em;
 	padding-top: 12px;
 	margin-left: 16px;
 }
 
 
-.homepage .searchDist .faRed {
+.homepageBody .searchDist .faRed {
 	margin-left: 5px;
 }
 
 
-.wid70{
+.homepageBody .wid70{
 	float:left;
 	position:relative;
 	width:60%;
 }
-.wid15{
+.homepageBody .wid15{
 	float:left;
 	position:relative;
 	width:15%;
 }
 
 
-.productsCountInfo{
+.homepageBody .productsCountInfo{
   font-size: 15px;
   padding: 20px 0px;
   color: rgb(70%, 70%, 70%);
   text-align: center;
 }
+
+
+/*** homepage body end  ***/

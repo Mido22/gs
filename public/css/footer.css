@@ -20,6 +20,10 @@ body{
   font-family: bReg;
 }
 
+.tmpModal31{
+  display:none;
+}
+
 .midoCentre{
     display: flex;
     align-items: center;	
@@ -105,3 +109,54 @@ body{
   color: rgb(70%, 70%, 70%);
   text-align: center;
 }
+
+
+.modal-header{
+ border-bottom-color: transparent; 
+}
+
+  .modal-dialog{
+  width:700px;
+  }
+  
+.modal-broken .close span{
+  font-size:40pt;
+  opacity: 100;
+  color: #000;
+  
+}
+
+#myModal {
+  text-align: center;
+}
+
+#myModal:before {
+  display: inline-block;
+  vertical-align: middle;
+  content: " ";
+  height: 100%;
+}
+
+#myModal .modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+
+.alertDownTitle{
+  font-family: bMed;
+  text-align: center;
+  color: rgb(30,125,205);
+  font-size: 31px;
+  padding:  15px 0px;
+}
+
+.alertDownText{
+  font-family: bMed;
+  text-align: center;
+  color: rgb(70%, 70%, 70%);
+  font-size: 17px;
+  padding-bottom: 15px;
+}
+

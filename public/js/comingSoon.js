@@ -15,11 +15,13 @@ comingSoon.controller('ComingSoonCtrl', function($scope, $http){
 
 $(document).ready(function(){
 
-		$(".fade").click(function(){
+	setTimeout(function(){
+		
+		$("#myModal").click(function(evt){
+			if(evt.target.className.indexOf('close')>-1)	return;
 			$(".fade .close").click();
 		});
-	$('.tmpBtn').hide();
-	setTimeout(function(){
+
 		$( "a" ).click(function() {
 			$('#myModal').modal('show');		
 		});
