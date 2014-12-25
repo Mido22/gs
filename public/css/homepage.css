@@ -1,3 +1,35 @@
+.headerG{
+}
+
+.headerG>*{
+	margin-right: 10px;
+}
+.headerG .searchBtn{
+}
+
+.headerG .searchBtn a{
+	color:#fff;
+	font-size: 1.5em;
+	text-decoration: none;
+	padding: 5px;
+	background-color:#0670A0;
+	
+}
+.headerG img{
+	width:40px;
+}
+
+.header3  input[type='text']{
+	line-height: 50px;	
+	height : 50px;
+	width:35%;
+	font-size: 1.5em;	
+}
+
+.cityDrop{
+	min-width:100px;
+}
+
 .homePageTop{
 }
 
@@ -57,14 +89,6 @@ margin-top: 15%;
 	font-size:1.60em;
 	padding-top: 12px;
 	margin-left: 16px;
-}
-
-.homepage .searchDist span{
-	color: #1870A0;
-	border-bottom: 1px dotted;
-    border-bottom-width: 1px;
-    border-bottom-style: dotted;
-    border-bottom-color: -moz-use-text-color;	
 }
 
 

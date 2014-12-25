@@ -1,14 +1,20 @@
-<header class="container-fluid header">	
+<header class="container-fluid header2">	
 	<div class="row-fluid">
 		<div class="headTitle pull-left">
 			<img src = 'images/gtext.png' />
 		</div>
 		<div class="cityTitle pull-right">
 			<div  class="dropdown" dropdown on-toggle="toggled(open)">
-	    		<div id="currentCity" class='blueDotted' dropdown-toggle>{{city|uppercase}}  <span class="caret"></span></div>    
-	      		<ul class="dropdown-menu">
+	    		<div id="currentCity" class='blueDotted ' dropdown-toggle>
+	    			<span> 
+	    				{{city|uppercase}}  <span class="caret"></span>
+	    			</span>
+	    		</div>    
+	      		<ul class="dropdown-menu cityDrop">
 	        		<li ng-repeat="c in cities">
-	    				<span  class='blueDotted'>{{c|uppercase}}</span>
+	    				<div >
+	    					<span  class='blueDotted'  ng-click="changeCity(c)">{{c|uppercase}}</span>
+	    				</div>
 	    			</li>
 	    		</ul>
 			</div>			

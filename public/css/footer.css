@@ -27,6 +27,8 @@ body{
 }
 
 .blueDotted{
+  margin-left : auto;
+  margin-right:auto;
   color:  rgb(24,112,160);
   border-bottom: 1px dotted;
     border-bottom-width: 1px;

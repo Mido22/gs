@@ -14,7 +14,15 @@ homepage.controller('homePageCtrl', function($scope){
   };
 
 	$scope.cities = ['Chennai', 'Mumbai', 'Bangalore'];
+	$scope.searchDistances = [5, 10, 15, 20 , 25, 50];
+	$scope.searchDistance = $scope.searchDistances[0];
 	$scope.city = $scope.cities[0];	
+	$scope.changeCity = function(c){
+		$scope.city = c;
+	};
+	$scope.changeDist = function(d){
+		$scope.searchDistance  = d;
+	};
 });
 
 
