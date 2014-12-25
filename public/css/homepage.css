@@ -1,5 +1,4 @@
 .homePageTop{
-	width:80%;
 }
 
 .homepage{
@@ -31,10 +30,9 @@ margin-top: 15%;
 	
 }
 
-.homepage .searchArea .radioOptions{
+.homepage  .radioOptions{
 	margin-left:auto;
 	margin-right:auto;
-	margin-top:25px;
 	clear:both;
 }
 
@@ -42,12 +40,12 @@ margin-top: 15%;
 .homepage .searchArea .radioOptions input {
 }
 
-.homepage .searchArea .radioOptions input +label{
-	margin: 10px 20px;
+.homepage  .radioOptions input +label{
+	margin: 0px 25px;
 	font-size: 22px;	
 	vertical-align:middle;
 }
-.homepage .searchArea .radioOptions input {
+.homepage  .radioOptions input {
 	vertical-align:middle;
 }
 
