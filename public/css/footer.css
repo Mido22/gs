@@ -23,7 +23,15 @@ body{
 .midoCentre{
     display: flex;
     align-items: center;	
-	justify-content: center;
+  	justify-content: center;
+}
+
+.blueDotted{
+  color:  rgb(24,112,160);
+  border-bottom: 1px dotted;
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
+    border-bottom-color: -moz-use-text-color; 
 }
 
 .headTitle{
@@ -32,8 +40,6 @@ body{
 
 #currentCity{
   font-size: 16px;
-  color:  rgb(24,112,160);
-  border-bottom: 1px dotted;
   text-transform: uppercase;
   margin-right: 50px;
   margin-top: 5px;
