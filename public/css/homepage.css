@@ -116,12 +116,12 @@
 	text-align: left;
 	float:left;
 	position:relative;
-	width:60%;
+	width:75%;
 }
 .homepageBody .wid15{
 	float:left;
 	position:relative;
-	width:40%;
+	width:25%;
 }
 
 .homepageBody .wid15>div{
@@ -133,7 +133,7 @@
 
 
 .homepageBody .productsCountInfo{
-  font-size: 16px;
+  font-size: 12px;
   padding: 20px 0px;
   color: rgb(70%, 70%, 70%);
   text-align: center;
