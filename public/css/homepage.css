@@ -33,13 +33,12 @@
 /*** homepage body start  ***/
 
 .homepageBody{
-	margin-top: 25%;
+	margin-top: 15%;
 }
 
 .homepageBody .searchIcon img{	
 	position: relative;
-	top: -10px;
-	right:20px;
+	top: -15px;
 	height: 80px;
 	margin-bottom: 10px;
 	margin-right: 15px;	
@@ -55,25 +54,24 @@
 .homepageBody .searchArea input[type='text']{
 	line-height: 45px;	
 	height : 45px;
-	font-size: 20px;	
+	font-size: 16px;	
 	width: 100%;
 	min-width: 100px;
 }
 .homepageBody .searchBtn{	
 	height:45px;
 	background-color:#0670A0;
-	min-width: 95px;
+	min-width: 80px;
 }
 
 .homepageBody .searchBtn>div{
-	padding-top: 7px;
+	padding-top: 12px;
 }
 
 .homepageBody .searchBtn a{
 	color:#fff;
-	font-size: 20px;
-	text-decoration: none;
-	
+	font-size: 16px;
+	text-decoration: none;	
 }
 
 .homepageBody  .radioOptions{
@@ -104,9 +102,8 @@
 .homepageBody .searchDist{
 	font-size:16px;
 	padding-top: 12px;
-	margin-left: 16px;
-	max-width: 15%;
-	min-width: 90px;
+	margin-left: 6px;
+	width: 80px;
 }
 
 
@@ -115,17 +112,24 @@
 }
 
 
-.homepageBody .wid80{
+.homepageBody .wid70{
 	text-align: left;
 	float:left;
 	position:relative;
-	width:80%;
+	width:60%;
 }
-.homepageBody .wid20{
+.homepageBody .wid15{
 	float:left;
 	position:relative;
-	width:20%;
+	width:40%;
 }
+
+.homepageBody .wid15>div{
+	position: relative;	
+   float: left;
+}
+
+
 
 
 .homepageBody .productsCountInfo{

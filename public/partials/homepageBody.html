@@ -3,45 +3,43 @@
 						<div class='row-fluid text-center'>
 							<div class="homepage container-fluid">								
 								<div class="row-fluid">
-									<div class='span1'></div>
-									<div class="searchArea span9">	
+									<div class="searchArea">	
 										<div class='container-fluid'>
 											<div class="row-fluid searchInAr">
 												<div class="searchIcon span1">	
 													<img src="images/gicon.png"/>
 												</div>
-												<div class="span9">
+												<div class="span11">
 													<div class='container-fluid'>
 														<div class="row-fluid">
-															<div class = 'wid80'>													
+															<div class = 'wid70'>													
 																<input type='text' placeholder='I am looking for...' ng-bind='searchTerm'/>
 															</div>
-															<div class = 'wid20' ng-click="search()">		
+															<div class = 'wid15' ng-click="search()">		
 																<div class='searchBtn' >													
 																	<div><a href='#'>SEARCH</a>	</div>																
+																</div>													
+																<div class='searchDist '>
+														    		<div class='blueDotted ' dropdown-toggle>
+														    			<span> 
+														    				&lt; {{searchDistance}} &nbsp;KM <i class="fa fa-location-arrow faRed"></i></span>
+														    			</span>
+														    		</div>    
+														      		<ul class="dropdown-menu ">
+														        		<li ng-repeat="d in searchDistances">
+														    				<div >
+														    					<span  class=' blueDotted'  ng-click="changeDist(d)">&lt;&nbsp; {{d}} &nbsp;KM<i class="fa fa-location-arrow faRed"></i></span>
+														    				</div>
+														    			</li>
+														    		</ul>
 																</div>
 															</div>
 														</div>
 													</div>
 												</div>
-												<div class='span2 searchDist midoCentre '>
-										    		<div class='blueDotted ' dropdown-toggle>
-										    			<span> 
-										    				&lt; {{searchDistance}} &nbsp;KM <i class="fa fa-location-arrow faRed"></i></span>
-										    			</span>
-										    		</div>    
-										      		<ul class="dropdown-menu ">
-										        		<li ng-repeat="d in searchDistances">
-										    				<div >
-										    					<span  class=' searchDist blueDotted'  ng-click="changeDist(d)">&lt;&nbsp; {{d}} &nbsp;KM<i class="fa fa-location-arrow faRed"></i></span>
-										    				</div>
-										    			</li>
-										    		</ul>
-												</div>
 											</div>
 										</div>
 									</div>				
-									<div class='span1'></div>
 								</div>								
 								<div class="row-fluid">
 										<div class='container-fluid'>
