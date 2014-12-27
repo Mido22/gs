@@ -103,7 +103,7 @@
 	font-size:16px;
 	padding-top: 12px;
 	margin-left: 6px;
-	width: 80px;
+	width: 90px;
 }
 
 
@@ -111,6 +111,16 @@
 	margin-left: 5px;
 }
 
+.homepageBody .searchDist ul{
+	min-width: 90px;
+}
+
+.homepageBody .searchDist li{
+	margin: 5px ;
+}
+.homepageBody .searchDist span{
+	border: 0px;
+}
 
 .homepageBody .wid70{
 	text-align: left;

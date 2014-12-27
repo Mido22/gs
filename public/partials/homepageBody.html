@@ -15,19 +15,19 @@
 															<div class = 'wid70'>													
 																<input type='text' placeholder='I am looking for...' ng-bind='searchTerm'/>
 															</div>
-															<div class = 'wid15' ng-click="search()">		
-																<div class='searchBtn' >													
+															<div class = 'wid15'>		
+																<div class='searchBtn'  ng-click="search()">													
 																	<div><a href='#'>SEARCH</a>	</div>																
 																</div>													
-																<div class='searchDist '>
-														    		<div class='blueDotted ' dropdown-toggle>
+																<div class='searchDist dropdown midoCentre'  dropdown on-toggle="toggled(open)">
+														    		<div class='blueDotted' dropdown-toggle>
 														    			<span> 
-														    				&lt; {{searchDistance}} &nbsp;KM <i class="fa fa-location-arrow faRed"></i></span>
+														    				&lt;&nbsp; {{searchDistance}} &nbsp;KM <i class="fa fa-location-arrow faRed"></i></span>
 														    			</span>
 														    		</div>    
 														      		<ul class="dropdown-menu ">
 														        		<li ng-repeat="d in searchDistances">
-														    				<div >
+														    				<div class='searchDistDrop'>
 														    					<span  class=' blueDotted'  ng-click="changeDist(d)">&lt;&nbsp; {{d}} &nbsp;KM<i class="fa fa-location-arrow faRed"></i></span>
 														    				</div>
 														    			</li>
