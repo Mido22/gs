@@ -3,20 +3,28 @@
 						<div class='row-fluid text-center'>
 							<div class="homepage container-fluid">								
 								<div class="row-fluid">
-									<div class="span2"></div>
-									<div class="searchIcon span1">	
-										<img src="images/gicon.png"/>
-									</div>
-									<div class="searchArea span7">	
+									<div class='span1'></div>
+									<div class="searchArea span9">	
 										<div class='container-fluid'>
 											<div class="row-fluid searchInAr">
-												<div class='wid70'>
-													<input type='text' placeholder='I am looking for...' />
+												<div class="searchIcon span1">	
+													<img src="images/gicon.png"/>
 												</div>
-												<div class='wid15 searchBtn midoCentre' ng-click="search()">
-													<a href='#'>SEARCH</a>
+												<div class="span9">
+													<div class='container-fluid'>
+														<div class="row-fluid">
+															<div class = 'wid80'>													
+																<input type='text' placeholder='I am looking for...' ng-bind='searchTerm'/>
+															</div>
+															<div class = 'wid20' ng-click="search()">		
+																<div class='searchBtn' >													
+																	<div><a href='#'>SEARCH</a>	</div>																
+																</div>
+															</div>
+														</div>
+													</div>
 												</div>
-												<div class='wid15 searchDist midoCentre '>
+												<div class='span2 searchDist midoCentre '>
 										    		<div class='blueDotted ' dropdown-toggle>
 										    			<span> 
 										    				&lt; {{searchDistance}} &nbsp;KM <i class="fa fa-location-arrow faRed"></i></span>
@@ -32,8 +40,8 @@
 												</div>
 											</div>
 										</div>
-									</div>
-									<div class="span2"></div>
+									</div>				
+									<div class='span1'></div>
 								</div>								
 								<div class="row-fluid">
 										<div class='container-fluid'>
@@ -50,6 +58,10 @@
 								</div>					
 							</div>
 						</div>
-					</div>			
+					</div>	
+
+
+
+		
 					
 					

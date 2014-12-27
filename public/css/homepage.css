@@ -32,31 +32,46 @@
 
 /*** homepage body start  ***/
 
-
 .homepageBody{
-margin-top: 15%;
+	margin-top: 25%;
 }
 
 .homepageBody .searchIcon img{	
 	position: relative;
-	top : -30px;
+	top: -10px;
+	right:20px;
+	height: 80px;
+	margin-bottom: 10px;
+	margin-right: 15px;	
+}
+
+.homepageBody .searchIcon{
+}
+
+.homepageBody .searchInAr{
+	vertical-align: middle;
 }
 
 .homepageBody .searchArea input[type='text']{
-	line-height: 60px;	
-	height : 60px;
-	width:100%;
-	font-size: 1.67em;	
+	line-height: 45px;	
+	height : 45px;
+	font-size: 20px;	
+	width: 100%;
+	min-width: 100px;
 }
 .homepageBody .searchBtn{	
-	height:60px;
+	height:45px;
 	background-color:#0670A0;
-	
+	min-width: 95px;
+}
+
+.homepageBody .searchBtn>div{
+	padding-top: 7px;
 }
 
 .homepageBody .searchBtn a{
 	color:#fff;
-	font-size: 1.67em;
+	font-size: 20px;
 	text-decoration: none;
 	
 }
@@ -72,23 +87,26 @@ margin-top: 15%;
 }
 
 
-.homepageBody .searchArea .radioOptions input {
+.homepageBody .radioOptions input {
+	margin : 0px;
+	vertical-align: middle;
 }
 
 .homepageBody  .radioOptions input +label{
-	margin: 0px 25px;
-	font-size: 1.60em;	
-	vertical-align:middle;
+	margin-left: 7px;
+	margin-right: 15px;
+	margin-bottom: 0px;
+	font-size: 18px;	
+	vertical-align: middle;
+    font-weight: normal;
 }
-.homepageBody  .radioOptions input {
-	vertical-align:middle;
-}
-
 
 .homepageBody .searchDist{
-	font-size:1.60em;
+	font-size:16px;
 	padding-top: 12px;
 	margin-left: 16px;
+	max-width: 15%;
+	min-width: 90px;
 }
 
 
@@ -97,20 +115,21 @@ margin-top: 15%;
 }
 
 
-.homepageBody .wid70{
+.homepageBody .wid80{
+	text-align: left;
 	float:left;
 	position:relative;
-	width:60%;
+	width:80%;
 }
-.homepageBody .wid15{
+.homepageBody .wid20{
 	float:left;
 	position:relative;
-	width:15%;
+	width:20%;
 }
 
 
 .homepageBody .productsCountInfo{
-  font-size: 15px;
+  font-size: 16px;
   padding: 20px 0px;
   color: rgb(70%, 70%, 70%);
   text-align: center;

@@ -24,6 +24,10 @@ body{
   display:none;
 }
 
+.container, .container-fluid{
+  max-width: 978px;
+}
+
 .midoCentre{
     display: flex;
     align-items: center;	

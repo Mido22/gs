@@ -1,7 +1,7 @@
 
 var homepage = angular.module('homepage', ['ui.bootstrap']);
 
-homepage.controller('homePageCtrl', function($scope){
+homepage.controller('homePageCtrl', function($scope, $modal, $log){
 
   $scope.toggled = function(open) {
     console.log('Dropdown is now: ', open);
@@ -24,10 +24,71 @@ homepage.controller('homePageCtrl', function($scope){
 		$scope.searchDistance  = d;
 	};
 	$scope.search = function(){
-		getLocation();
+
+	   if(navigator.geolocation){
+	      var options = {timeout:3000};
+	      navigator.geolocation.getCurrentPosition(function(position){
+
+  				 		$scope.position = position;
+  				 		$scope.changeUrl();
+	      			},
+	      			 function(err){
+							  if(err.code == 1) {
+							    $scope.errorMessage ="Error: Access is denied!";
+							  }else if( err.code == 2) {
+							    $scope.errorMessage ="Error: Position is unavailable!";
+							  }
+							  $scope.handleLocationFail();
+	  					},  options);
+
+	   }else{
+	      $scope.errorMessage = "Sorry, browser does not support geolocation!";
+	      $scope.handleLocationFail();
+	   }
 	};
+
+	$scope.zipcode = '120605';
+
+  $scope.handleLocationFail = function (size) {
+
+    var modalInstance = $modal.open({
+      templateUrl: 'partials/homepageModel.html',
+      controller: 'ModalInstanceCtrl',
+      resolve: {
+        zipcode: function () {
+          return $scope.zipcode;
+        },
+        errorMessage: function(){
+          return $scope.errorMessage;
+
+        }
+      }
+    });
+
+    modalInstance.result.then(function (zipcode) {
+    	console.log('hi ='+ zipcode);
+      $scope.zipcode = zipcode;
+    }, function () {
+      console.log('Modal dismissed at: ' + new Date());
+    });
+  };
+
+
+
 });
 
+
+homepage.controller('ModalInstanceCtrl', function ($scope, $modalInstance, zipcode) {
+
+
+  $scope.ok = function () {
+    $modalInstance.close($scope.zipcode);
+  };
+
+  $scope.cancel = function () {
+    $modalInstance.dismiss('cancel');
+  };
+});
 
 $(document).ready(function(){
 	setTimeout(function(){
@@ -42,29 +103,3 @@ $(document).ready(function(){
 	},1000);
 });
 
-
-function showLocation(position) {
-  var latitude = position.coords.latitude;
-  var longitude = position.coords.longitude;
-  alert("Latitude : " + latitude + " Longitude: " + longitude);
-}
-
-function errorHandler(err) {
-  if(err.code == 1) {
-    alert("Error: Access is denied!");
-  }else if( err.code == 2) {
-    alert("Error: Position is unavailable!");
-  }
-}
-function getLocation(){
-
-   if(navigator.geolocation){
-      // timeout at 60000 milliseconds (60 seconds)
-      var options = {timeout:60000};
-      navigator.geolocation.getCurrentPosition(showLocation, 
-                                               errorHandler,
-                                               options);
-   }else{
-      alert("Sorry, browser does not support geolocation!");
-   }
-}
