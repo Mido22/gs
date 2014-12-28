@@ -54,31 +54,21 @@ homepage.controller('homePageCtrl', function($scope, $modal, $log){
     var modalInstance = $modal.open({
       templateUrl: 'partials/homepageModel.html',
       controller: 'ModalInstanceCtrl',
+      scope: $scope,
       resolve: {
-        zipcode: function () {
-          return $scope.zipcode;
-        },
-        errorMessage: function(){
-          return $scope.errorMessage;
-
-        }
       }
     });
 
     modalInstance.result.then(function (zipcode) {
-    	console.log('hi ='+ zipcode);
       $scope.zipcode = zipcode;
-    }, function () {
-      console.log('Modal dismissed at: ' + new Date());
+    }, function () { // when cancel is clicked.
     });
   };
-
-
-
+  
 });
 
 
-homepage.controller('ModalInstanceCtrl', function ($scope, $modalInstance, zipcode) {
+homepage.controller('ModalInstanceCtrl', function ($scope, $modalInstance) {
 
 
   $scope.ok = function () {
@@ -89,6 +79,8 @@ homepage.controller('ModalInstanceCtrl', function ($scope, $modalInstance, zipco
     $modalInstance.dismiss('cancel');
   };
 });
+
+
 
 $(document).ready(function(){
 	setTimeout(function(){

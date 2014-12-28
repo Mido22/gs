@@ -151,3 +151,8 @@
 
 
 /*** homepage body end  ***/
+
+.modalGetAddress input[type='text']{
+	width: 100%;
+	margin:20px 0;
+}
