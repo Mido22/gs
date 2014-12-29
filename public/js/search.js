@@ -1,5 +1,5 @@
 
-theModule.controller('homePageCtrl', function($scope, $modal, $log, $rootScope){
+theModule.controller('searchCtrl', function($scope, $modal, $log, $rootScope){
 
   $scope.toggled = function(open) {
     //console.log('Dropdown is now: ', open);

@@ -1,7 +1,6 @@
 
-var comingSoon = angular.module('comingSoon', []);
-
-comingSoon.controller('ComingSoonCtrl', function($scope, $http){
+theModule.controller('ComingSoonCtrl', function($scope, $http, $rootScope){
+	/*
 	$scope.city = "Chennai";
 	
 	
@@ -9,22 +8,21 @@ comingSoon.controller('ComingSoonCtrl', function($scope, $http){
 		if(data.city && data.city.length > 3){
 			$scope.city = data.city;
 		}
-    });	
+    });
+    */
+  $scope.toggled = function(open) {
+    console.log('Dropdown is now: ', open);
+  };
+
+  $scope.toggleDropdown = function($event) {
+    $event.preventDefault();
+    $event.stopPropagation();
+    $scope.status.isopen = !$scope.status.isopen;
+  };
+	$scope.cities = $rootScope.cities;
+	$scope.city = $scope.cities[0];		
+
+	$scope.changeCity = function(c){
+		$scope.city = c;
+	};
 });
-
-
-$(document).ready(function(){
-
-	setTimeout(function(){
-		
-		$("#myModal").click(function(evt){
-			if(evt.target.className.indexOf('close')>-1)	return;
-			$(".fade .close").click();
-		});
-
-		$( "a" ).click(function() {
-			$('#myModal').modal('show');		
-		});
-	},1000);
-});
-
