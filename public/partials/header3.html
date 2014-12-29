@@ -28,18 +28,18 @@
 					<a href='#'>SEARCH</a>
 				</span>				
 			</span>
-    		<span class='searchDist blueDotted ' dropdown on-toggle="toggled(open)">
-    			<span dropdown-toggle> 
-    				&lt; {{searchDistance}} &nbsp;KM <i class="fa fa-location-arrow faRed"></i></span>
+    		<span class=' searchDist blueDotted dropdown'  dropdown on-toggle="toggled(open)">
+    			<span   class='blueDotted dropdown-toggle' dropdown-toggle> 
+    				&lt; {{searchDistance}} &nbsp;KM <i class="fa fa-location-arrow faRed"></i>
     			</span>
+	      		<ul class="dropdown-menu ">
+	        		<li ng-repeat="d in searchDistances">
+	    				<div >
+	    					<span  class=' searchDist blueDotted'  ng-click="changeDist(d)">&lt;&nbsp; {{d}} &nbsp;KM<i class="fa fa-location-arrow faRed"></i></span>
+	    				</div>
+	    			</li>
+	    		</ul>
     		</span>    
-      		<ul class="dropdown-menu ">
-        		<li ng-repeat="d in searchDistances">
-    				<div >
-    					<span  class=' searchDist blueDotted'  ng-click="changeDist(d)">&lt;&nbsp; {{d}} &nbsp;KM<i class="fa fa-location-arrow faRed"></i></span>
-    				</div>
-    			</li>
-    		</ul>
 			<span class="radioOptions">
 				<span><input type="radio" ng-model="searchType" value="1"> <label> Product Find </label></span>
 				<span><input type="radio" ng-model="searchType" value="2"> <label>  Service Find</label></span>

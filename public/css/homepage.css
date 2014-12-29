@@ -54,7 +54,7 @@
 	vertical-align: middle;
 }
 
-.homepageBody  .radioOptions input +label{
+.homepageBody  .radioOptions label{
 	margin-left: 7px;
 	margin-right: 15px;
 	margin-bottom: 0px;

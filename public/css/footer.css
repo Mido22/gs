@@ -226,6 +226,16 @@ hr{
   font-size: 13px;
 }
 
+.header3 .searchDist ul{
+  min-width: 90px;
+}
+
+.header3 .searchDist li{
+  margin-top: 6px;
+}
+
+
+
 /* for header3*/
 
 .modalGetAddress input[type='text']{

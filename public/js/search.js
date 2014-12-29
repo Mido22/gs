@@ -2,7 +2,7 @@
 theModule.controller('searchCtrl', function($scope, $modal, $log, $rootScope){
 
   $scope.toggled = function(open) {
-    //console.log('Dropdown is now: ', open);
+    console.log('Dropdown is now: ', open);
   };
 
   $scope.toggleDropdown = function($event) {
