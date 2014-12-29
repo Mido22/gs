@@ -22,14 +22,14 @@
 
 		<div  class='headerG text-center'>
 			<img src="images/gicon.png"/>
-			<span class='mySpan31'>
+			<span>
 				<input type='text' placeholder='I am looking for...' />
 				<span class='searchBtn '>
 					<a href='#'>SEARCH</a>
 				</span>				
 			</span>
-    		<span class='searchDist blueDotted ' dropdown on-toggle="toggled(open)">
-    			<span dropdown-toggle> 
+    		<span class='searchDist blueDotted ' dropdown-toggle>
+    			<span> 
     				&lt; {{searchDistance}} &nbsp;KM <i class="fa fa-location-arrow faRed"></i></span>
     			</span>
     		</span>    
@@ -51,7 +51,4 @@
 		</div>
 
 	</div>	
-	<div class="row-fluid">
-		<hr/>
-	</div>
 </header>

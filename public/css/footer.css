@@ -38,6 +38,11 @@ body{
   min-width:100px;
 }
 
+.faRed{
+  color: red;
+}
+
+
 
 .blueDotted{
   margin-left : auto;
@@ -61,22 +66,15 @@ body{
   
 }
 
-.header{
-  border-bottom: 1px solid #ccc;
+hr{
+  margin-top: 2px;
+  margin-bottom: 10px;
+  border-color: rgba(101, 101, 101, 0.34);
 }
 
- .header{
-  padding-top: 10px;
-  padding-bottom: 15px;
- }
  
- .header,.footer{
-	padding-left:40px;
-	padding-right:40px;
- }
- 
+ /* for Footer */
  .footer{
-  border-top: 1px solid #ccc;
   padding-top: 15px;
   margin-top:15px;
  }
@@ -87,7 +85,7 @@ body{
   bottom:0px;
   width:100%;
   }
-}  /* */
+}  
  
 .footer-ul{
    list-style: outside none; 
@@ -119,6 +117,9 @@ body{
   text-align: center;
 }
 
+ /* For footer end*/
+
+ /*  footer modal*/
 
 .modal-header{
  border-bottom-color: transparent; 
@@ -169,3 +170,65 @@ body{
   padding-bottom: 15px;
 }
 
+
+ /*  footer modal*/
+
+/* for header3*/
+
+
+.header3{
+}
+
+.header3{
+  font-size: 13px;
+}
+
+.header3 .mySpan31{
+  margin-left: 10px;
+  margin-right: 2px;
+}
+
+.header3 .mySpan31 .searchBtn{
+  position: relative;
+  left: -7px;
+  height:30px;
+}
+
+
+.header3 .searchBtn a{
+  color:#fff;
+  text-decoration: none;
+  padding: 5px;
+  background-color:#0670A0;
+  font-size: 13px;
+  
+}
+.header3 .headerG img{
+  width:30px;
+}
+
+.header3  input[type='text']{
+  line-height: 30px;  
+  height : 30px;
+  width: 120px;
+  margin-right: 0px;
+  font-size: 13px;
+}
+
+.header3 .radioOptions{
+  margin-left: 20px;
+}
+
+.header3 .radioOptions label{
+  font-weight: normal;
+  margin-right: 8px;
+  vertical-align: middle;
+  font-size: 13px;
+}
+
+/* for header3*/
+
+.modalGetAddress input[type='text']{
+  width: 100%;
+  margin:20px 0;
+}
