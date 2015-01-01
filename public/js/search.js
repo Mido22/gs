@@ -1,6 +1,19 @@
 
 theModule.controller('searchCtrl', function($scope, $modal, $log, $rootScope){
 
+  var sr = {};
+  sr.totalCount = 521 ;
+  sr.searchDistance = 5;
+  sr.currentPage = 3;
+  sr.searchTerm = 'mido';
+  sr.itemsPerPage = 5;
+  sr.numPages = Math.ceil(sr.totalCount / sr.itemsPerPage);
+  sr.sortBy = 'Relevence';
+  sr.changeSort = function(sortBy){
+    sr.sortBy = sortBy;
+  };
+  $scope.sr = sr;
+
   $scope.toggled = function(open) {
     console.log('Dropdown is now: ', open);
   };

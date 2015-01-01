@@ -30,12 +30,12 @@
 			</span>
     		<span class=' searchDist blueDotted dropdown'  dropdown on-toggle="toggled(open)">
     			<span   class='blueDotted dropdown-toggle' dropdown-toggle> 
-    				&lt; {{searchDistance}} &nbsp;KM <i class="fa fa-location-arrow faRed"></i>
+    				&lt; {{searchDistance}} ~&nbsp;KM <i class="fa fa-location-arrow faRed"></i>
     			</span>
 	      		<ul class="dropdown-menu ">
 	        		<li ng-repeat="d in searchDistances">
 	    				<div >
-	    					<span  class=' searchDist blueDotted'  ng-click="changeDist(d)">&lt;&nbsp; {{d}} &nbsp;KM<i class="fa fa-location-arrow faRed"></i></span>
+	    					<span  class=' searchDist blueDotted'  ng-click="changeDist(d)">~&lt;&nbsp; {{d}} &nbsp;KM<i class="fa fa-location-arrow faRed"></i></span>
 	    				</div>
 	    			</li>
 	    		</ul>
