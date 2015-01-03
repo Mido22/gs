@@ -1,3 +1,70 @@
-.searchBody {
+.searchBody>.row-fluid {
+	clear: both;
+}
+
+.searchBody .blueBind{
+	color: #0F6F9B;
+	margin: 0 5px;
+}
+
+
+.searchBody  ul{
+  min-width: 90px;
+}
+
+
+.searchBody .searchPaginationTop{
+	margin-top: 30px;
+}
+
+.searchBody .searchResults {
+	margin: 0px 50px;
+  border-bottom: 1px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color:  #818284;
+}
+
+.searchBody .searchResults:first-child{
+	margin: 80px 80px;
+	border-bottom: 0px;
 	
 }
+
+.searchBody .searchResults .routeImage img{
+	width: 40px;
+}
+
+.searchBody .searchResults .pull-left{
+	text-align: left;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.searchBody .searchResults .pull-right{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.searchBody .searchResults .noOfItems>span{
+	font-size: 20px;
+	color: #EE1B21;
+  border-bottom: 1px dotted;
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
+    border-bottom-color: -moz-use-text-color; 
+}
+
+.searchBody .searchResults .shopName{
+	color: #0F6F9B;
+	font-size: 18px;
+	margin: 5px 0px;
+}
+
+.searchBody .searchResults .phoneNos, .searchBody .searchResults .address, .searchBody .searchResults .findRoute{
+	font-size: 14px;
+	color: #818284;
+}
+
+
+

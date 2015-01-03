@@ -84,7 +84,7 @@ hr{
 
 @media only screen and (min-height:640px) and (min-width:1000px){	
   .footer {
-  position: absolute;
+  position: relative;
   bottom:0px;
   width:100%;
   }
