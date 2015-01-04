@@ -27,11 +27,10 @@
     		</span>   
 		</div>
 	</div>
-	<div class='row-fluid text-center'>
-		<div class='searchPaginationTop'>
+	<div class='row-fluid text-center searchPaginationTop'>
 			<pre>Page: <span data-ng-bind="sr.currentPage"></span> / <span data-ng-bind="sr.numPages"></span></pre>
 		    <pagination ng-change="pageChanged()" total-items="sr.totalCount" items-per-page="sr.itemsPerPage" ng-model="sr.currentPage" max-size="5" class="pagination-sm" boundary-links="true" num-pages="sr.numPages"></pagination>			    
-		</div>
+		
 	</div>
 	<div  class='row-fluid text-center searchResults' ng-repeat = "sResult in sr.results">
 		<div class="  pull-left">

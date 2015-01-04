@@ -1,3 +1,4 @@
+/* for SearchBody.html*/
 .searchBody>.row-fluid {
 	clear: both;
 }
@@ -19,15 +20,14 @@
 
 .searchBody .searchResults {
 	margin: 0px 50px;
-  border-bottom: 1px;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color:  #818284;
+  border-top: 1px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color:  #818284;
 }
 
-.searchBody .searchResults:first-child{
-	margin: 80px 80px;
-	border-bottom: 0px;
+.searchBody .searchPaginationTop +.searchResults{
+	border-top: 0px;
 	
 }
 
@@ -66,5 +66,171 @@
 	color: #818284;
 }
 
+ .searchBody .searchResults .address{
+	 width: 300px;
+ }
+/* for SearchBody.html*/
+
+/* for searchStoreBody.html*/
+
+.searchStoreBody>.row-fluid {
+	clear: both;
+}
+
+.searchStoreBody .searchStoreResultsTitle{
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.searchStoreBody .shopDetails{
+	text-align: left;
+	font-size: 14px;
+	color: #818284;
+}
+
+.searchStoreBody .shopDetails .shopName{
+	color: #0F6F9B;
+	font-size: 18px;
+	margin: 5px 0px;
+}
+
+.searchStoreBody .shopDetails .address{
+	width: 200px
+}
+
+.searchStoreBody .shopDetailsImg{
+	font-size: 12px;	
+}
+.searchStoreBody .shopDetailsImg .findRoute{
+	color: #818284;	
+}
+
+.searchStoreBody .shopDetailsImg img{
+	width: 30px;
+}
+
+.searchStoreBody .myDiv31{	
+	position: relative;
+    top: 20px;
+}
+
+.searchStoreBody .mySpan32 .searchBtn{	
+	background-color:#0670A0;
+	min-width: 80px;
+  position: relative;
+  left: -5px;
+	height: 31px;
+	padding: 5px;
+}
+
+.searchStoreBody .mySpan32 input{
+	height: 32px;
+}
 
 
+
+.searchStoreBody .mySpan32 .searchBtn a{
+	color:#fff;
+	font-size: 14px;
+	text-decoration: none;	
+	height: 31px;
+}
+
+.searchStoreBody .shopTitleDiv1{
+  border-right: 1px;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color:  #818284;
+	padding: 10px 0;
+}
+
+.searchStoreBody .div32{
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color:  #818284;
+		padding-top: 10px;
+}
+
+.searchStoreBody .div33{
+	padding-top: 10px;
+}
+
+.searchStoreBody .shopTitleDiv3+*{
+  border-top: 1px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color:  #818284;
+}
+
+.searchStoreBody .storeItems31{
+	clear: both;
+	text-align: left;
+}
+
+.searchStoreBody .storeItems31 .title{
+	font-size: 16px;
+	color:#0F6F9B;
+}
+
+.searchStoreBody .storeItems31 .price{
+	margin-left: 10px;
+	font-size: 13px;
+	color: #FF0000;
+}
+	
+.searchStoreBody .storeItems31 .imgDiv{
+	margin-right: 30px;
+}
+
+.searchStoreBody .storeItems31 .itemDesc{
+	color: #818284;
+	width:250px;
+	margin-bottom: 10px;
+}
+
+
+.searchStoreBody .div33 .row-fluid{
+	clear: both;
+	margin: 9px 18px;
+}
+
+.searchStoreBody .storeItems31 .available, .searchStoreBody .otherCategories{
+	color: #818284;
+}
+ .searchStoreBody .otherCategories+div{
+	 margin-top: 20px !important;;
+ }
+	
+
+.searchStoreBody .div33 .div34{
+	color:#0F6F9B;
+	font-size: 15px;
+}
+
+.searchStoreBody .div33 .div35 .blue{
+	font-weight: bold;
+}
+
+.searchStoreBody .storeSearchItemCount{
+	font-size:20px;
+	color: #FF0000;
+  border-bottom: 1px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color:  #FF0000;
+	margin-bottom: 10px;
+}
+ .searchStoreBody .storeCategory, .searchStoreBody .storeCategory+.storeItems31{
+	 margin-top: 10px
+ }
+
+
+
+
+
+
+
+
+
+
+/* for searchStoreBody.html*/
